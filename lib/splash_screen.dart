@@ -1,6 +1,6 @@
 import 'dart:async';
 import 'package:flutter/material.dart';
-import 'package:flutter_stepper_demo/stepper_demo.dart';
+import 'package:flutter_stepper_demo/driverForm.dart';
 
 
 class Splash extends StatefulWidget {
@@ -14,8 +14,8 @@ class VideoState extends State<Splash> with SingleTickerProviderStateMixin{
 
   var _visible = true;
 
-  AnimationController animationController;
-  Animation<double> animation;
+  late AnimationController animationController;
+  late Animation<double> animation;
 
   startTime() async {
     var _duration = new Duration(seconds: 2);
@@ -24,7 +24,7 @@ class VideoState extends State<Splash> with SingleTickerProviderStateMixin{
 
   void navigationPage() {
     Navigator.of(context).push(
-        MaterialPageRoute(builder: (context) => StepperDemo()));
+        MaterialPageRoute(builder: (context) => DriverRegistrationForm()));
   }
 
   @override

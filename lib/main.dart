@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_stepper_demo/splash_screen.dart';
-import 'package:flutter_stepper_demo/stepper_demo.dart';
+import 'package:flutter_stepper_demo/driverForm.dart';
 
 void main() {
   runApp(MyApp());
@@ -13,7 +13,7 @@ class MyApp extends StatelessWidget {
       home: Splash(),
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
-        primaryColor: Colors.cyan[600],
+        primaryColor: Colors.black,
         primarySwatch: Colors.red,
         brightness: Brightness.light,
       ),
